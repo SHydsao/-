@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            width:200px;
+            height:200px;
+            background:orange;
+            margin-bottom: 60px;
+        }
+        .con{
+            width:200px;
+            height:200px;
+            background:red;
+            margin-top:40px;
+        }
+
+        .BFC{
+            overflow: hidden;
+        }
+        /* 
+            BFC布局规则：属于同一个BFC的两个相邻Box的margin会发生重叠（按照最大margin值设置）
+        */
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <div class="BFC">
+        <div class="con"></div>
+    </div>
+</body>
+</html>
